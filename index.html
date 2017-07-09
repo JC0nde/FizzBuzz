@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+
+  <title>The FizzBuzz Question in JS</title>
+  <meta name="description" content="The FizzBuzz Question in JS">
+  <meta name="author" content="Jonathan">
+</head>
+<body>
+    <h1>The FizzBuzz Question in JS</h1>
+
+    <script>
+     const fizzBuzzer = function(){
+         for (i = 1; i<101; i++ ){
+             if(i%3 == 0 && i%5 == 0){
+                 document.write('<li>FizzBuzz</li>');
+             }
+             else if (i%5 == 0){
+                 document.write('<li>Buzz</li>');
+             }
+             else if(i%3 == 0){
+                 document.write('<li>Fizz</li>');
+             }else{
+                 document.write('<li>' + i + '</li>');
+             }
+         }
+     }
+     fizzBuzzer();
+    </script>
+</body>
+</html>
+ 
