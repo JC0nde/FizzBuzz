@@ -14,13 +14,13 @@
     <script>
      const fizzBuzzer = function(){
          for (let i = 1; i<=100; i++ ){
-             if(i%3 == 0 && i%5 == 0){
+             if(i%3 === 0 && i%5 === 0){
                  document.write('<li>FizzBuzz</li>');
              }
-             else if (i%5 == 0){
+             else if (i%5 === 0){
                  document.write('<li>Buzz</li>');
              }
-             else if(i%3 == 0){
+             else if(i%3 === 0){
                  document.write('<li>Fizz</li>');
              }else{
                  document.write('<li>' + i + '</li>');
